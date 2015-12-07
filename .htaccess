@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^traildog\.co\.uk$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.traildog\.co\.uk$
+RewriteRule ^/?$ "http\:\/\/www\.trail\-dog\.co\.uk" [R=301,L]
+ErrorDocument 404 http://www.traildog.co.uk/traildog/what_broke_this_time.php
